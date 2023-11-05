@@ -1,0 +1,14 @@
+program FormulárioPrincipal_Project1;
+
+uses
+  Vcl.Forms,
+  FormulárioPrincipal in 'FormulárioPrincipal.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

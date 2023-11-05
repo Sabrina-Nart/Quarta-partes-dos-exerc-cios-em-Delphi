@@ -1,0 +1,16 @@
+program FormulárioPrincipal_Project1;
+
+uses
+  Vcl.Forms,
+  FormulárioPrincipal in 'FormulárioPrincipal.pas' {frmPrincipal},
+  uFormulario2 in 'uFormulario2.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
